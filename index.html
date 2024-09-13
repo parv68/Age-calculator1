@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Age calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
 <div class="container">
-  <label for="day">Day</label>
-  <input type="date" name="day" id="day">
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <div class="date-container">
+    <div class="date-input">
+        <label for="day">DAY</label>
+        <input type="text" id="day" value="24">
+    </div>
+    <div class="date-input">
+        <label for="month">MONTH</label>
+        <input type="text" id="month" value="09">
+    </div>
+    <div class="date-input">
+        <label for="year">YEAR</label>
+        <input type="text" id="year" value="1984">
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+  <div class="age">
+    <h1><span>--</span>years</h1>
+    <h1><span>--</span>months</h1>
+    <h1><span>--</span>days</h1>
+  </div>
   
 </div>
 </body>
