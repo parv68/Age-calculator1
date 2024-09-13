@@ -15,23 +15,23 @@
   <div class="date-container">
     <div class="date-input">
         <label for="day">DAY</label>
-        <input type="text" id="day" value="24">
+        <input type="number" id="day-input" value="01" max="31" min="01">
     </div>
     <div class="date-input">
         <label for="month">MONTH</label>
-        <input type="text" id="month" value="09">
+        <input type="number" id="month-input" value="01" max="12" min="01">
     </div>
     <div class="date-input">
         <label for="year">YEAR</label>
-        <input type="text" id="year" value="1984">
+        <input type="number" id="year-input" value="2005" min="1900" max="3000">
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" id="button" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
   </div>
   
   <div class="age">
-    <h1><span>--</span>years</h1>
-    <h1><span>--</span>months</h1>
-    <h1><span>--</span>days</h1>
+    <h1><span id="years">--</span>years</h1>
+    <h1><span id="months">--</span>months</h1>
+    <h1><span id="days">--</span>days</h1>
   </div>
   <script src="script.js"></script>
 </div>
