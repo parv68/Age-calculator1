@@ -28,14 +28,16 @@ function calculateAge() {
     let months = currentMonth - month;
     let days = currentDay - day;
 
-    // Adjust years, months, days if the birthday hasn't occurred yet this year
-    if (months < 0) {
-        years--;
-        months += 12;
-    }
+    // Adjust days if current day is less than birth day
     if (days < 0) {
         months--;
         days += getDaysInMonth(currentYear, currentMonth - 1);
+    }
+
+    // Adjust months if current month is less than birth month
+    if (months < 0) {
+        years--;
+        months += 12;
     }
 
     // Display the results
