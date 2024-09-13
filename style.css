@@ -55,6 +55,9 @@ body {
     font-style: normal;
     font-size: 40px;
 }
+.age h1{
+    margin-bottom: 10px;
+}
 
 .age span{
     color: hsl(228, 45%, 44%);
