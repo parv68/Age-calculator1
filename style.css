@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.date-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.date-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date-input label {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+.date-input input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+.date-input input:focus {
+    border-color: #7c4dff;
+    box-shadow: 0 0 5px rgba(124, 77, 255, 0.5);
+}
+
+.age{
+    padding: 20px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.age span{
+    color: hsl(228, 45%, 44%);
+}
+
+.container svg{
+    background-color: black;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    float: right;
+}
