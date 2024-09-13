@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0;
     margin: 0;
     background-color: #f9f9f9;
 }
@@ -11,7 +12,9 @@ body {
 .container{
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 20px;
+    border-bottom-right-radius: 80px;
+    width: 50%;
 }
 
 .date-container {
@@ -46,11 +49,11 @@ body {
 }
 
 .age{
-    padding: 20px;
+    padding-left: 20px;
     font-family: "Protest Guerrilla", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .age span{
@@ -60,7 +63,49 @@ body {
 .container svg{
     background-color: black;
     border-radius: 50px;
-    height: 70px;
-    width: 70px;
-    float: right;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+   .container {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        flex-direction: row;
+    }
+    .container {
+    width: 65%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+    width: 50%;
+    } 
+    
+    .date-container{
+        gap: 50px;
+    }
+    
+    .date-input input {
+        width: 100px;
+        height: 40px;
+    }
+
 }
