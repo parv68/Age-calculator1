@@ -75,14 +75,29 @@ body {
     background-color: black;
 }
 
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .date-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .date-input input {
+        width: 80px;
+        height: 30px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     body {
         flex-direction: column;
     }
-   .container {
-    width: 100%;
-    margin-bottom: 20px;
-   }
+    .container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -90,29 +105,25 @@ body {
         flex-direction: row;
     }
     .container {
-    width: 65%;
+        width: 65%;
     }
-    
 }
 
 @media screen and (min-width: 768px) {
     .container {
-    width: 50%;
+        width: 50%;
     }
 }
 
 @media screen and (min-width: 1024px){
     .container {
-    width: 50%;
+        width: 50%;
     } 
-    
     .date-container{
         gap: 50px;
     }
-    
     .date-input input {
         width: 100px;
         height: 40px;
     }
-
 }
